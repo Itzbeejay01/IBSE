@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibadan Supernatural Experience 1.0 | Worship Event Ibadan | Gospel Concert Nigeria 2025</title>
+    <meta name="description" content="Join Ibadan Supernatural Experience 1.0 – the biggest worship and gospel concert in Ibadan, Nigeria. Experience powerful praise, worship, ministers, artists, and a life-changing spiritual gathering. Register now for 2025!">
+    <meta name="keywords" content="Ibadan Supernatural Experience, ibse, ibse 1.0, worship event Ibadan, gospel concert Nigeria, Christian event Ibadan, praise night, spiritual gathering, 2025, ministers, artists, register, gospel music, worship night, Ibadan event, Jesus, revival, campus event">
+    <link rel="canonical" href="https://ibse.vercel.app/">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ibse.vercel.app/">
+    <meta property="og:title" content="Ibadan Supernatural Experience 1.0 | Worship Event Ibadan | Gospel Concert Nigeria 2025">
+    <meta property="og:description" content="Join Ibadan Supernatural Experience 1.0 – the biggest worship and gospel concert in Ibadan, Nigeria. Experience powerful praise, worship, ministers, artists, and a life-changing spiritual gathering. Register now for 2025!">
+    <meta property="og:image" content="https://ibse.vercel.app/banner.jpg">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://ibse.vercel.app/">
+    <meta name="twitter:title" content="Ibadan Supernatural Experience 1.0 | Worship Event Ibadan | Gospel Concert Nigeria 2025">
+    <meta name="twitter:description" content="Join Ibadan Supernatural Experience 1.0 – the biggest worship and gospel concert in Ibadan, Nigeria. Experience powerful praise, worship, ministers, artists, and a life-changing spiritual gathering. Register now for 2025!">
+    <meta name="twitter:image" content="https://ibse.vercel.app/banner.jpg">
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      "name": "Ibadan Supernatural Experience 1.0",
+      "startDate": "2025-09-05T17:00:00+01:00",
+      "endDate": "2025-09-05T22:00:00+01:00",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Lekan Salami Stadium, Adamasingba, Ibadan",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Adamasingba",
+          "addressLocality": "Ibadan",
+          "addressRegion": "Oyo",
+          "addressCountry": "NG"
+        }
+      },
+      "image": [
+        "https://ibse.vercel.app/banner.jpg"
+      ],
+      "description": "Join Ibadan Supernatural Experience 1.0 – the biggest worship and gospel concert in Ibadan, Nigeria. Experience powerful praise, worship, ministers, artists, and a life-changing spiritual gathering. Register now for 2025!",
+      "organizer": {
+        "@type": "Organization",
+        "name": "IBSE Planning Committee",
+        "url": "https://ibse.vercel.app/"
+      }
+    }
+    </script>
+    <link rel="icon" type="image/jpeg" href="logo.jpg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-orange': '#F25D27',
+                        'brand-dark': '#0A0A0A',
+                        'brand-dark-accent': '#18181B', // Zinc 900
+                        'brand-light': '#F1F5F9'
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0A0A0A; /* brand-dark */
+        }
+        .font-lora {
+            font-family: 'Lora', serif;
+        }
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #FBBF24, #F25D27);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+        @keyframes float {
+            0% { transform: translateY(0) scale(1); }
+            50% { transform: translateY(-20px) scale(1.05); }
+            100% { transform: translateY(0) scale(1); }
+        }
+        @keyframes float-reverse {
+            0% { transform: translateY(0) scale(1); }
+            50% { transform: translateY(20px) scale(0.95); }
+            100% { transform: translateY(0) scale(1); }
+        }
+        .animate-float { animation: float 6s ease-in-out infinite; }
+        .animate-float-slow { animation: float 12s ease-in-out infinite; }
+        .animate-float-reverse { animation: float-reverse 8s ease-in-out infinite; }
+    </style>
+</head>
+<body class="bg-brand-dark text-white">
+
+    <!-- Loading Animation -->
+    <div id="loader" class="fixed inset-0 bg-brand-dark flex items-center justify-center z-[9999] transition-opacity duration-700">
+        <svg class="animate-spin h-16 w-16 text-brand-orange" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-label="Loading">
+            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z"></path>
+        </svg>
+    </div>
+
+    <!-- Animated SVG Bubbles/Particles -->
+    <div aria-hidden="true" class="fixed inset-0 pointer-events-none z-0">
+        <svg class="absolute top-10 left-0 w-40 h-40 opacity-30 animate-float-slow" viewBox="0 0 200 200"><circle cx="100" cy="100" r="100" fill="#F25D27" /></svg>
+        <svg class="absolute bottom-20 right-0 w-32 h-32 opacity-20 animate-float" viewBox="0 0 160 160"><circle cx="80" cy="80" r="80" fill="#FBBF24" /></svg>
+        <svg class="absolute top-1/2 left-1/2 w-24 h-24 opacity-10 animate-float-reverse" viewBox="0 0 120 120"><circle cx="60" cy="60" r="60" fill="#fff" /></svg>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="bg-brand-dark/70 backdrop-blur-lg fixed top-0 left-0 right-0 z-50 shadow-lg border-b border-white/10">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="flex items-center space-x-3 group">
+                <span class="text-xl font-bold gradient-text sm:hidden">IBSE 1.0</span>
+                <img src="logo.jpg" alt="IBSE Logo" class="h-10 w-10 rounded-md shadow-md border-2 border-brand-orange group-hover:scale-105 transition-transform duration-200" />
+                <span class="text-2xl font-bold gradient-text hidden sm:inline-block">Ibadan Supernatural Experience 1.0</span>
+            </a>
+            <div class="flex items-center space-x-4">
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="hover:text-brand-orange transition-colors">Home</a>
+                    <a href="#about" class="hover:text-brand-orange transition-colors">About</a>
+                    <a href="#details" class="hover:text-brand-orange transition-colors">Event Details</a>
+                    <a href="#volunteer" class="hover:text-brand-orange transition-colors">Volunteer</a>
+                    <a href="#register" class="hover:text-brand-orange transition-colors">Register</a>
+                    <!-- <a href="#ministers" class="hover:text-brand-orange transition-colors">Ministers</a> -->
+                    <a href="#contact" class="hover:text-brand-orange transition-colors">Contact</a>
+                </div>
+
+                <button id="mobile-menu-button" class="md:hidden text-2xl ml-2">
+                    &#9776;
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2">
+            <a href="#home" class="block hover:text-brand-orange transition-colors">Home</a>
+            <a href="#about" class="block hover:text-brand-orange transition-colors">About</a>
+            <a href="#details" class="block hover:text-brand-orange transition-colors">Event Details</a>
+            <a href="#volunteer" class="block hover:text-brand-orange transition-colors">Volunteer</a>
+            <a href="#register" class="block hover:text-brand-orange transition-colors">Register</a>
+            <!-- <a href="#ministers" class="block hover:text-brand-orange transition-colors">Ministers</a> -->
+            <a href="#contact" class="block hover:text-brand-orange transition-colors">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat" style="background-image: url('./banner.jpg');">
+        <div class="absolute inset-0 bg-brand-dark/85"></div>
+        <div class="relative text-center z-10 p-6">
+            <h1 class="text-4xl md:text-7xl font-bold text-white font-lora">Ibadan Supernatural Experience 1.0</h1>
+            <p class="text-xl md:text-3xl italic text-gray-200 mt-4 font-lora">"The Fellowship of God: A Stirred Heart"</p>
+            <p class="text-lg md:text-xl text-gray-300 mt-8">A night of supernatural worship where Jesus is the central focus.</p>
+            <a href="#register" class="mt-12 inline-block bg-brand-orange text-white font-bold py-3 px-8 rounded-2xl shadow-lg hover:bg-opacity-90 transition-all hover:scale-105">
+                Register Now &rarr;
+            </a>
+        </div>
+    </section>
+
+    <!-- Countdown Timer -->
+    <section id="countdown" class="py-20 md:py-32">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold font-lora mb-12">The Altar <span class="gradient-text">Awaits</span></h2>
+            <div id="countdown-timer" class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 max-w-3xl mx-auto">
+                <div class="bg-white/5 backdrop-blur-md p-6 rounded-2xl border border-white/10 text-center">
+                    <div id="days" class="text-5xl lg:text-7xl font-bold gradient-text">00</div>
+                    <div class="text-sm uppercase tracking-widest mt-2 text-gray-400">Days</div>
+                </div>
+                <div class="bg-white/5 backdrop-blur-md p-6 rounded-2xl border border-white/10 text-center">
+                    <div id="hours" class="text-5xl lg:text-7xl font-bold gradient-text">00</div>
+                    <div class="text-sm uppercase tracking-widest mt-2 text-gray-400">Hours</div>
+                </div>
+                <div class="bg-white/5 backdrop-blur-md p-6 rounded-2xl border border-white/10 text-center">
+                    <div id="minutes" class="text-5xl lg:text-7xl font-bold gradient-text">00</div>
+                    <div class="text-sm uppercase tracking-widest mt-2 text-gray-400">Minutes</div>
+                </div>
+                <div class="bg-white/5 backdrop-blur-md p-6 rounded-2xl border border-white/10 text-center">
+                    <div id="seconds" class="text-5xl lg:text-7xl font-bold gradient-text">00</div>
+                    <div class="text-sm uppercase tracking-widest mt-2 text-gray-400">Seconds</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About the Event -->
+    <section id="about" class="py-20 md:py-32 bg-brand-dark-accent">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold font-lora">What is <span class="gradient-text">IBSE 1.0</span>?</h2>
+            <div class="max-w-3xl mx-auto mt-8 text-gray-300 space-y-6">
+                <p>
+                    IBSE 1.0 is a campus convergence meeting birthed to raise altars of true worship where Jesus is the central focus. It is a call to stir hearts, unify believers, and create a space where heaven invades the earth through intense worship, the Word, and spiritual alignment.
+                </p>
+                <p>
+                    Through music, prayer, and deep encounters, IBSE is more than an event it's a movement of revival in Ibadan.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Details -->
+    <section id="details" class="py-20 md:py-32">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-5 gap-12 items-center">
+                <div class="md:col-span-2 text-center md:text-left">
+                    <h2 class="text-3xl md:text-4xl font-bold font-lora">Event <span class="gradient-text">Details</span></h2>
+                    <div class="w-24 h-1 bg-gradient-to-r from-amber-400 to-brand-orange my-6 mx-auto md:mx-0"></div>
+                    <p class="text-gray-400">All you need to know about the most anticipated event of the year.</p>
+                </div>
+                <div class="md:col-span-3">
+                    <div class="space-y-6">
+                        <!-- Venue -->
+                        <div class="flex items-start space-x-4 p-6 bg-brand-dark-accent rounded-2xl transition-all duration-300 hover:bg-white/10 hover:shadow-2xl">
+                            <div class="bg-brand-orange/10 p-3 rounded-full text-brand-orange">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-xl">Venue</h3>
+                                <p class="text-gray-400">Lekan Salami Stadium, Adamasingba, Ibadan</p>
+                            </div>
+                        </div>
+                        <!-- Date -->
+                        <div class="flex items-start space-x-4 p-6 bg-brand-dark-accent rounded-2xl transition-all duration-300 hover:bg-white/10 hover:shadow-2xl">
+                            <div class="bg-brand-orange/10 p-3 rounded-full text-brand-orange">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-xl">Date</h3>
+                                <p class="text-gray-400">Friday, September 5, 2025</p>
+                            </div>
+                        </div>
+                        <!-- Focus -->
+                        <div class="flex items-start space-x-4 p-6 bg-brand-dark-accent rounded-2xl transition-all duration-300 hover:bg-white/10 hover:shadow-2xl">
+                            <div class="bg-brand-orange/10 p-3 rounded-full text-brand-orange">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 14l9-5-9-5-9 5 9 5z" /><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" /></svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-xl">Focus</h3>
+                                <p class="text-gray-400">Worship | Word | Prayer | Impartation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteer Call -->
+    <section id="volunteer" class="py-20 md:py-32 bg-brand-dark-accent">
+        <div class="container mx-auto px-6">
+            <div class="md:grid md:grid-cols-2 md:gap-12 items-center">
+                <div class="mb-10 md:mb-0">
+                    <h2 class="text-3xl md:text-4xl font-bold font-lora mb-6">Join the <span class="gradient-text">Workforce</span></h2>
+                    <p class="text-gray-300 mb-6">
+                        We believe that every move of God requires prepared vessels. If you're passionate about serving, this is your chance to be part of something eternal. From sound and media to prayer and welfare, there's a place for every willing heart. Let's build the altar together.
+                    </p>
+                    <a href="#register" class="inline-block bg-brand-orange text-white font-bold py-3 px-8 rounded-2xl shadow-lg hover:bg-opacity-90 transition-all hover:scale-105">
+                        Volunteer Now &rarr;
+                    </a>
+                </div>
+                <div>
+                    <img src="./cloth1.jpg" alt="IBSE T-Shirt" class="rounded-2xl shadow-lg w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="register" class="py-20 md:py-32 text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold font-lora mb-6">Register <span class="gradient-text">Now</span></h2>
+            <p class="max-w-3xl mx-auto text-gray-300 mb-8">
+                Whether you're attending or volunteering, we'd love to know you're coming! Please click the button below to register. You'll be contacted with more details shortly.
+            </p>
+            <a href="https://forms.gle/z2hjLSYu6p8u4ETM8" target="_blank" rel="noopener" class="inline-block bg-brand-orange text-white font-bold py-4 px-10 rounded-2xl shadow-lg text-xl hover:bg-opacity-90 transition-all hover:scale-105" aria-label="Register for IBSE 1.0">
+                Register on Google Form
+            </a>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 md:py-32 bg-brand-dark-accent">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center font-lora mb-16">Why You Shouldn't <span class="gradient-text">Miss It</span></h2>
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                
+                <div class="bg-brand-dark p-8 rounded-2xl shadow-lg border border-white/10">
+                    <p class="text-gray-300 italic mb-4">"IBSE changed my walk with God forever."</p>
+                    <p class="font-bold gradient-text">- Imaginary Attendee</p>
+                </div>
+
+                <div class="bg-brand-dark p-8 rounded-2xl shadow-lg border border-white/10">
+                    <p class="text-gray-300 italic mb-4">"The worship was raw. The atmosphere was pure."</p>
+                    <p class="font-bold gradient-text">- Past Participant</p>
+                </div>
+
+                <div class="bg-brand-dark p-8 rounded-2xl shadow-lg border border-white/10">
+                    <p class="text-gray-300 italic mb-4">"I left with a stirred heart and renewed purpose."</p>
+                    <p class="font-bold gradient-text">- Revived Believer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section id="gallery" class="py-20 md:py-32 bg-brand-dark-accent fade-in-section">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center font-lora mb-12">Event <span class="gradient-text">Gallery</span></h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Worship concert crowd" class="rounded-2xl shadow-lg w-full h-64 object-cover" loading="lazy" />
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Musical event lights" class="rounded-2xl shadow-lg w-full h-64 object-cover" loading="lazy" />
+                <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=600&q=80" alt="People worshipping at event" class="rounded-2xl shadow-lg w-full h-64 object-cover" loading="lazy" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet the Ministers/Artists Section -->
+    <section id="ministers" class="py-20 md:py-32 bg-brand-dark-accent fade-in-section">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center font-lora mb-12">Meet the <span class="gradient-text">Ministers & Artists</span></h2>
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="bg-brand-dark rounded-2xl shadow-lg p-8 flex flex-col items-center text-center">
+                    <img src="https://omolayoayokanmi.com.ng/img/logo.png" alt="Minister John Doe" class="w-32 h-32 rounded-full mb-4 border-4 border-brand-orange object-cover" />
+                    <h3 class="text-xl font-bold mb-2">Minister John Doe</h3>
+                    <p class="text-gray-400">A passionate worship leader known for ushering in God's presence through music and prayer.</p>
+                </div>
+                <div class="bg-brand-dark rounded-2xl shadow-lg p-8 flex flex-col items-center text-center">
+                    <img src="https://omolayoayokanmi.com.ng/img/logo.png" alt="Minister Jane Smith" class="w-32 h-32 rounded-full mb-4 border-4 border-brand-orange object-cover" />
+                    <h3 class="text-xl font-bold mb-2">Minister Jane Smith</h3>
+                    <p class="text-gray-400">A dynamic speaker and psalmist, inspiring hearts with her powerful voice and testimony.</p>
+                </div>
+                <div class="bg-brand-dark rounded-2xl shadow-lg p-8 flex flex-col items-center text-center">
+                    <img src="https://omolayoayokanmi.com.ng/img/logo.png" alt="Minister Samuel Praise" class="w-32 h-32 rounded-full mb-4 border-4 border-brand-orange object-cover" />
+                    <h3 class="text-xl font-bold mb-2">Minister Samuel Praise</h3>
+                    <p class="text-gray-400">A renowned gospel artist whose songs have touched lives across the nation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Footer -->
+    <footer id="contact" class="py-20 bg-brand-dark text-center border-t border-white/10">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold font-lora mb-6">Stay <span class="gradient-text">Connected</span></h2>
+            <div class="flex justify-center space-x-6 my-8">
+                <!-- Social Media Icons (placeholders) -->
+                <a href="#" class="text-gray-400 hover:text-brand-orange transition-colors">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-brand-orange transition-colors">
+                     <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-brand-orange transition-colors">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.013-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.345 2.525c.636-.247 1.363-.416 2.427-.465C9.794 2.013 10.148 2 12.315 2zm0 1.62c-2.403 0-2.729.01-3.686.053-1.01.046-1.583.21-1.943.363-.455.195-.758.423-1.056.724-.298.301-.53.602-.724 1.057-.153.36-.317.932-.363 1.942-.043.957-.053 1.283-.053 3.686s.01 2.729.053 3.686c.046 1.01.21 1.583.363 1.943.195.455.423.758.724 1.056.301.298.602.53 1.057.724.36.153.932.317 1.942.363.957.043 1.283.053 3.686.053s2.729-.01 3.686-.053c1.01-.046 1.583-.21 1.943-.363.455-.195.758-.423 1.056-.724.298-.301.53-.602-.724-1.057.153-.36.317-.932-.363-1.942.043-.957.053-1.283.053-3.686s-.01-2.729-.053-3.686c-.046-1.01-.21-1.583-.363-1.943-.195-.455-.423-.758-.724-1.056-.301-.298-.602-.53-1.057-.724-.36-.153-.932-.317-1.942-.363C15.044 3.63 14.718 3.62 12.315 3.62zM12 7.18c-2.653 0-4.82 2.167-4.82 4.82s2.167 4.82 4.82 4.82 4.82-2.167 4.82-4.82S14.653 7.18 12 7.18zM12 15c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3zm6.38-7.857a1.426 1.426 0 100-2.852 1.426 1.426 0 000 2.852z" clip-rule="evenodd" /></svg>
+                </a>
+            </div>
+            <div class="text-gray-500 mt-10">
+                <p>Organized by: IBSE Planning Committee</p>
+                <p>Powered by: The Fellowship of God</p>
+                <p class="mt-4">&copy; 2024 <a href="https://ibse.vercel.app" class="hover:text-brand-orange">ibse.vercel.app</a></p>
+                <p class="mt-4 text-sm text-gray-500">
+                  Website developed by <a href="https://omolayoayokanmi.com.ng/" class="hover:text-brand-orange underline" target="_blank" rel="noopener">BeeTechHub</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Register Button (Mobile Only) -->
+    <a href="https://forms.gle/z2hjLSYu6p8u4ETM8" target="_blank" rel="noopener" class="fixed bottom-6 right-6 z-50 bg-brand-orange text-white font-bold py-3 px-6 rounded-full shadow-lg hover:bg-opacity-90 transition-all hover:scale-105 md:hidden" aria-label="Register for IBSE 1.0">
+        Register
+    </a>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-6 left-6 z-50 bg-brand-dark-accent text-brand-orange p-3 rounded-full shadow-lg hover:bg-brand-orange hover:text-white transition-all focus:outline-none focus:ring-2 focus:ring-brand-orange hidden" aria-label="Back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" /></svg>
+    </button>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('#mobile-menu a, nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth < 768) { // md breakpoint
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Scroll animations
+        const animatedElements = document.querySelectorAll('section, footer');
+
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        animatedElements.forEach(el => {
+            el.classList.add('fade-in-section');
+            observer.observe(el);
+        });
+
+        // Countdown Timer Logic
+        const countdown = () => {
+            const eventDate = new Date('September 5, 2025 17:00:00').getTime(); // Assuming a 5 PM start time
+            const now = new Date().getTime();
+            const distance = eventDate - now;
+
+            if (distance < 0) {
+                clearInterval(interval);
+                document.getElementById('countdown-timer').innerHTML = '<div class="col-span-2 md:col-span-4 text-3xl font-bold gradient-text">The event has started!</div>';
+                return;
+            }
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById('days').innerText = days.toString().padStart(2, '0');
+            document.getElementById('hours').innerText = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').innerText = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').innerText = seconds.toString().padStart(2, '0');
+        };
+
+        const interval = setInterval(countdown, 1000);
+
+        // Loader
+        window.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                document.getElementById('loader').style.opacity = 0;
+                setTimeout(() => {
+                    document.getElementById('loader').style.display = 'none';
+                }, 700);
+            }, 800); // Show loader for at least 800ms
+        });
+
+        // Back to Top Button
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTop.classList.remove('hidden');
+            } else {
+                backToTop.classList.add('hidden');
+            }
+        });
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+
+</body>
+</html>
